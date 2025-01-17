@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personalized workout plans, calorie calculators, daily challenges, and expert advice to make your fitness journey enjoyable and successful.">
+    <title>Workouts | FitLife</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/images/favicon_io/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FitLife</div>
+            <button class="toggle-btn" aria-label="Toggle navigation">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="meal-plans.html">Meal Plans</a></li>
+                <li><a href="workouts.html" class="active">Workouts</a></li>
+                <li><a href="bmi.html">BMI</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <!-- Hero Section -->  
+    <section class="fitness-hero">
+        <h1>Your Path to Fitness Success</h1>
+        <p>Empower yourself with custom workouts, daily challenges, and expert tools designed for every level.</p>
+        <a href="#daily-challenge" class="btn">Start Your Journey</a>
+    </section>
+
+
+    <!--Benefits Section-->
+    <section class="workout-benefits">
+        <h2>Why Exercise?</h2>
+        <div class="workout-benefits-grid">
+            <div class="workout-benefit-item" id="benefit-1">
+                <div class="workout-circle">
+                    <div class="workout-icon">🏋️</div>
+                </div>
+                <h3>Boosts Energy</h3>
+                <p>Enhances stamina and reduces fatigue, empowering you daily.</p>
+                <div class="workout-number">1</div>
+            </div>
+            <div class="workout-arrow"></div>
+            <div class="workout-benefit-item" id="benefit-2">
+                <div class="workout-circle">
+                    <div class="workout-icon">😊</div>
+                </div>
+                <h3>Improves Mood</h3>
+                <p>Releases endorphins to reduce stress and promote positivity.</p>
+                <div class="workout-number">2</div>
+            </div>
+            <div class="workout-arrow"></div>
+            <div class="workout-benefit-item" id="benefit-3">
+                <div class="workout-circle">
+                    <div class="workout-icon">💪</div>
+                </div>
+                <h3>Builds Strength</h3>
+                <p>Increases muscle mass and enhances overall performance.</p>
+                <div class="workout-number">3</div>
+            </div>
+            <div class="workout-arrow"></div>
+            <div class="workout-benefit-item" id="benefit-4">
+                <div class="workout-circle">
+                    <div class="workout-icon">🧠</div>
+                </div>
+                <h3>Sharpens Focus</h3>
+                <p>Boosts cognitive function, helping you stay alert and productive.</p>
+                <div class="workout-number">4</div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="workout-categories">
+        <header>
+            <h2>Workout Categories</h2>
+            <p>Select a plan based on your fitness level and follow a full week's schedule to achieve your goals!</p>
+        </header>
+        <div class="workout-categories-grid">
+            <!-- Beginner Plan -->
+            <article class="workout-card workout-beginner">
+                <h3>Beginner</h3>
+                <p>Start slow with low-impact exercises to build a strong foundation.</p>
+                <ul>
+                    <li><strong>Monday:</strong> 10 squats, 5 knee push-ups</li>
+                    <li><strong>Tuesday:</strong> 15-minute walk</li>
+                    <li><strong>Wednesday:</strong> 10 lunges, 10 sit-ups</li>
+                    <li><strong>Thursday:</strong> 10 squats, 1-minute plank</li>
+                    <li><strong>Friday:</strong> 20 jumping jacks</li>
+                    <li><strong>Saturday:</strong> Rest or gentle stretching</li>
+                    <li><strong>Sunday:</strong> 15-minute yoga</li>
+                </ul>
+            </article>
+            <!-- Intermediate Plan -->
+            <article class="workout-card workout-intermediate">
+                <h3>Intermediate</h3>
+                <p>Take your fitness to the next level with moderate-intensity workouts.</p>
+                <ul>
+                    <li><strong>Monday:</strong> 20 squats, 10 push-ups</li>
+                    <li><strong>Tuesday:</strong> 30-minute jog</li>
+                    <li><strong>Wednesday:</strong> 20 lunges, 15 sit-ups</li>
+                    <li><strong>Thursday:</strong> 2-minute plank, 10 burpees</li>
+                    <li><strong>Friday:</strong> 25 jumping jacks, 10 push-ups</li>
+                    <li><strong>Saturday:</strong> 20-minute cycling</li>
+                    <li><strong>Sunday:</strong> Active recovery or light yoga</li>
+                </ul>
+            </article>
+            <!-- Advanced Plan -->
+            <article class="workout-card workout-advanced">
+                <h3>Advanced</h3>
+                <p>Challenge yourself with high-intensity exercises and push your limits.</p>
+                <ul>
+                    <li><strong>Monday:</strong> 30 burpees, 20 push-ups</li>
+                    <li><strong>Tuesday:</strong> 40-minute run</li>
+                    <li><strong>Wednesday:</strong> 30 lunges, 20 sit-ups</li>
+                    <li><strong>Thursday:</strong> 3-minute plank, 15 burpees</li>
+                    <li><strong>Friday:</strong> 50 jumping jacks, 30 squats</li>
+                    <li><strong>Saturday:</strong> HIIT: 10-min sprints + 10-min strength</li>
+                    <li><strong>Sunday:</strong> Rest or active recovery</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+    
+        <!-- Personalized Workout Call-to-Action -->
+    <div class="personalized-diet">
+        <h3>Want a Workout Routine Tailored Just for You?</h3>
+        <p>Our experts can create a personalized workout based on your health goals, preferences, and lifestyle.</p>
+        <a href="contact.html" class="btn btn-primary">Contact Us for a Personalized Workout plan</a>
+    </div>
+        <!-- Daily Calorie Burn Calculator -->
+<section id="calorie-calculator">
+    <h2>Daily Calorie Burn Calculator</h2>
+    <p>Find out how many calories you should burn daily to stay fit:</p>
+    <form id="calorie-form">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <label for="age">Age (years):</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" name="weight" placeholder="Enter your weight" required>
+
+        <button type="button" class="btn" onclick="calculateDailyCalories()">Calculate</button>
+    </form>
+
+    <div id="calorie-result">Recommended Daily Calorie Burn: <span>--</span> kcal</div>
+</section>
+
+
+        <!-- Success Stories -->
+        <section id="success-stories">
+            <h2>Real Results</h2>
+            <p>Be inspired by transformations from our community:</p>
+            <div class="stories-grid">
+                <article>
+                    <h3>John D.</h3>
+                    <p>"Lost 15 kg in 6 months! These plans truly work."</p>
+                </article>
+                <article>
+                    <h3>Samantha R.</h3>
+                    <p>"I feel more energetic and confident than ever."</p>
+                </article>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 10px; border-bottom: 1px solid #ccc;">
+            <p style="margin: 0;">© 2024 Rutvi Kathiriya. All rights reserved.</p>
+            <p style="margin: 0;">Created on: December 8, 2024</p>
+        </div>
+        <div style="margin-top: 10px; text-align: left;">
+            <p style="margin: 0; font-weight: bold;">References:</p>
+            <div style="font-size: 0.7em; margin-top: 5px;">
+                <p><a href="https://www.youtube.com/watch?v=tzdRcfTS-mA&t=6s" target="_blank">YouTube: BMI Explained</a></p>
+                <p><a href="https://www.youtube.com/watch?v=EUI2_PYJ6d0" target="_blank">YouTube: Healthy Meal Prep</a></p>
+                <p><a href="https://www.freepik.com/premium-vector/body-mass-index-man-silhouettes-with-different-obesity-degrees-weight-loss_20366935.htm" target="_blank">Freepik: BMI Chart Illustration</a></p>
+                <p><a href="https://www.healthline.com/nutrition/balanced-diet" target="_blank">Healthline: Benefits of a Balanced Diet</a></p>
+                <p><a href="https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html" target="_blank">CDC: BMI Information</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        function calculateDailyCalories() {
+            const gender = document.getElementById("gender").value;
+            const age = parseInt(document.getElementById("age").value);
+            const weight = parseFloat(document.getElementById("weight").value);
+    
+            if (!gender || isNaN(age) || isNaN(weight) || age <= 0 || weight <= 0) {
+                document.getElementById("calorie-result").innerHTML =
+                    "Recommended Daily Calorie Burn: <span>Please enter valid details!</span>";
+                return;
+            }
+    
+            // Basal Metabolic Rate (BMR) calculation based on gender
+            let bmr;
+            if (gender === "male") {
+                bmr = 88.36 + (13.4 * weight) + (4.8 * 170) - (5.7 * age); // Example height of 170 cm
+            } else if (gender === "female") {
+                bmr = 447.6 + (9.2 * weight) + (3.1 * 160) - (4.3 * age); // Example height of 160 cm
+            }
+    
+            // Assuming light activity level (multiplier = 1.375)
+            const dailyCalories = bmr * 1.375;
+    
+            document.getElementById("calorie-result").innerHTML = 
+                `Recommended Daily Calorie Burn: <span>${dailyCalories.toFixed(2)}</span> kcal`;
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const toggleButton = document.querySelector('.toggle-btn');
+    const navMenu = document.querySelector('header nav ul');
+
+    toggleButton.addEventListener('click', function () {
+        navMenu.classList.toggle('active'); // Toggle menu visibility
+        toggleButton.classList.toggle('close'); // Toggle close icon
+        toggleButton.innerHTML = toggleButton.classList.contains('close') ? '✖' : '☰'; // Switch icons
+    });
+});
+
+    </script>
+    
+</body>
+</html>
